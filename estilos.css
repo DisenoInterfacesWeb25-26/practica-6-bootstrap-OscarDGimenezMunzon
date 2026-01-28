@@ -4,6 +4,10 @@ body {
     box-sizing: border-box;
 }
 
-.btn{
+.btn, .footer{
     background-color: #18a2b7;
+}
+
+.btn:hover{
+    background-color: #127b8c;
 }

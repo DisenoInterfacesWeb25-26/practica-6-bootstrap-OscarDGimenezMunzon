@@ -12,10 +12,11 @@
 
 <body>
     <!--BARRA NAVEGACIÓN-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-md">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
             <a class="navbar-brand" href="#">
-                <img src="./images/ENIUN@2x.png" alt="Logo" width="100px" class="d-inline-block align-text-top">
+                <img src="./images/ENIUN@2x.png" alt="Logo" width="50%" class="d-inline-block align-text-top">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,22 +28,27 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link disabled" aria-disabled="true" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" aria-disabled="true" href="#" data-bs-toggle="dropdown" role="button">Servicios</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">SEO</a></li>
+                            <li><a class="dropdown-item" href="#">Desarrollo web</a></li>
+                            <li><a class="dropdown-item" href="#">Marketing online</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Contacto</a>
+                        <a class="nav-link disabled" aria-disabled="true" href="#">Contacto</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar" />
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    <button class="btn btn-success" type="submit">Buscar</button>
                 </form>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
     <!--CARROUSEL DE IMÁGENES-->
     <div class="container-xl bg-body-secondary mb-5">
@@ -69,15 +75,15 @@
             </button>
         </div>
 
-        <div class="row">
-            <div class="col m-4 p-5">
-                <h1>Hello, world!</h1>
+        <div class="row px-md-5">
+            <div class="col m-4 p-4">
+                <h1 class="fw-light">Hello, world!</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro minus voluptas ut culpa corporis
                     at
                     error quod optio a? Suscipit, fugiat? Sapiente unde architecto aut reprehenderit deleniti, neque
                     suscipit commodi!</p>
                 <hr>
-                <p>Voluptatibus sit perspiciatis reprehenderit quod debitis non! Quas deleniti alias error explicabo
+                <p class="fw-semibold">Voluptatibus sit perspiciatis reprehenderit quod debitis non! Quas deleniti alias error explicabo
                     officiis nostrum! Dolorum, modi.</p>
                 <button class="btn btn-success">Learn more</button>
             </div>
@@ -88,7 +94,7 @@
     <div class="container">
         <h2 class="text-center m-3">ARTÍCULOS</h2>
     </div>
-    <div class="container d-flex justify-content-center">
+    <div class="container-lg d-flex justify-content-center">
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3 mb-4">
             <div class="col">
                 <div class="card">
@@ -121,6 +127,18 @@
                             exercitationem consequatur nemo velit.</p>
                         <a href="#" class="btn btn-primary">More info</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xl">
+        <div class="row">
+            <div class="col">
+                <div class="footer p-5 mb-4 d-flex justify-content-between">
+                    <a class="text-white link-underline link-underline-opacity-0" href="#">Enuin.com</a>
+                    <a class="text-white-50 link-underline link-underline-opacity-0" href="#">Política de privacidad y
+                        cookies</a>
                 </div>
             </div>
         </div>
